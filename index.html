@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="navbar">
+        <div class="navlinks">
+          <ul>
+            <li><a href="#">OUR SCHOOL</a></li>
+            <li><a href="#">ACADEMICS</a></li>
+            <li><a href="#">ADMISSIONS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="header">
+      <div class="container">
+      <div class="row1">
+        <div class="col-2">
+          <h1>DISCOVER</h1>
+          <h1 class="rer">TRANSFORM <h1>
+          <h1>ENPOWER</h1>
+          <h2>THE BIRTH PLACE OF VISIONARY LEADERSHIP</h2>
+          <p>
+            Self discovery is a personal journey but you don't have to  walk through it alone here at eagle's nest we help you discover , develope and deploy your potential , unlock your creative sphere offer you guidance towards nurturing your passion and choicing a career toward excelling in life.</p>
+          <a href="" class="btn">LEARN MORE</a>
+          
+            <a href="./login/index.html" class="btn">Apply Now</a>
+          
+        </div>    
+        <div class="col-2">
+          <div class="mySlides fade">
+            <img src="img/shutterstock_1427569397-Copy-pozomlme1ltks20negag6ez36qlu0s03u8ifoum978.jpg" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/shutterstock_1281259924-Copy-pozomlmeoesams4h5uv9v4u8df0lm4vt26ash720ss.jpg" style="height: 720px;" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/shutterstock_1782927614-1-scaled-pozomlme1ltks20negag6ez36qlu0s03u8ifoum978.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------how we do it-->
+    <section class="intro">
+      <div class="edit">
+      <h1>HOW DO WE ACHIEVE IT?</h1>
+      <p>We  Envision, Aspire a Generation toward Leading effectively E.A.G.L.E.
+        Our dedicated model of value-infused leadership has impacted families, students, schools, careers, which is achieved through 
+        Training, coaching and mentorship, programs. In the following area of expertise</p>
+      </div>
+        <div class="row">
+  <div class="intro-col">
+    <img src="img/da.jpg" >
+    <h3>TRAINING & MENTORSHIP</h3>
+    <div class="list">
+    <p > <ul>
+      <li>Branding self identity</li>
+    <li>  Leadership</li>
+    <li> Relationship</li>
+      <li>Communication</li>
+    <li> Service</li>
+    </ul>
+      </p>
+    </div>
+  </div>
+  <div class="intro-col">
+    <img src="img/daa.jpg" >
+    <h3>COACHING</h3>
+    <div class="list">
+    <p><ul>
+     <li> One on one </li> 
+      <li>Group coaching </li>
+      <li>Nature walk </li> 
+    </ul></p>
+  </div>
+  </div>
+  <div class="intro-col">
+    <img src="img/daaa.jpg" >
+    <h3>PROGRAMS</h3>
+    <div class="list">
+    <p><ul>
+      <li>MASTER CLASSES</li>
+      <li>SEMINERS</li>
+      <li>WEBINERS</li>
+      <li>CONFERENCE</li>
+    </ul></p>
+  </div>
+</div>
+</div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 6000); // Change image every 2 seconds
+      }
+      window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+
+
+var sticky = navbar.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
+  </body>
+</html>
